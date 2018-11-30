@@ -77,4 +77,72 @@ A: componentDidUpdate, componentDidMount
 Q: What is the difference between composition and inheritance in JS functional programming?
 A: They are design choices. Inheritance is building based upon what an object is, Composition is building based upon what an object does.
 
+Q: Which React Life Cycle methods can call this.setState()?
+A: componentWillMount(), componentDidMount(), componentDidUpdate(), componentWillReceiveProps()
+
+Q: Describe an implementation of Dijkstra's shortest-path algorithm.
+A: From starting point on graph choose the shortest path from each next node while also not doubling back on a node already traversed.
+
+Q: Assuming RESTful routes, a GET request to `/magazines/:magazine_id/articles` would do what?
+A: Call the index action of the ArticlesController with magazine_id as a key in the params hash
+
+Q: What algorithm is best suited for a social network that suggests friends to a user?
+A: A Breadth First Search Graph
+
+Q: What occurs with an <input type='text' required>?
+A: 'Required' attribute will check if the text field is empty in client-side when the form is submitted. Submit button can be clicked when the form is submitted.
+
+Q: The React component method, this.setState(), ______
+A: Enqueus a request to update the state and re-render the component, which may be delayed and batched with other requests.
+
+Q: To implement Dijkstras shortest path algorithm on unweighted graphs so that is runs in linear time, the data structure to be used is?
+A: Queue
+
+Q: The uniform interface constraint ensures that there is a common language buetween servers and clients, that alllow each part to be swapped out or modified without breaking the entire system.
+This is acheived through 4 sub-constraints. Which are they?
+A: 
+1) Identification of resources
+2) Caching
+3) Layered systems
+4) manipulation of resources through representations
+
+Q: What are some features of REST?
+A: 
+1) Language independent
+2) Can be used even if firewalls exist
+3) Can be used on top of HTTPS
+4) Requests and responses are lightweight
+
+Q: Why would a developer choose to use an IIFE?
+A: When they wanted to control what was added to the global namespace
+
+Q: Depth First Search Graph. What is the tightest upper bound on the run time of DFS?
+A: O(n2)
+
+Q: Make is a utility that automatically builds executable programs and libraries from source code by reading files called makefiles which speciy how to redive the target program.
+What is the algorithm used by Make?
+A: Topological Sorting
+
+Q: In an undirected, unweighted connected graph, what algorithm has the fastest time complexity?
+A: A BFS search
+
+Q: What is a prototype in JS?
+A: An object
+
+Q: When creating an object in JS, is it better practice to define methods on the prototype or within the constructor?
+A: Prototype. The methods will be defined in one place and won't be duplicated across instances, saving memory.
+
+Q: TCP/IP is organized into four abstraction layers. What are they from highest to lowest?
+A: Application > Transport > Internet > Link
+
+Q: What are key differences between TCP and UDP?
+A: 
+1) UDP does not have a handshaking protocol, TCP does.
+2) UDP has smaller packet sizes (UDP header: 8 bytes, TCP header: 20 bytes), no connection required, and more controll over when data is sent.
+3) USP is used by apps to deliver a faster stream of info by doing away with error checking, UDP packets can arrive out of order, or corrupted.
+4) TCP has congestion control and error detection (mandatory checksum)
+
+Q: What does it mean when we say JS's event loop is non-blocking?
+A: The program can continue executing instructions before an operation in the event loop has finished.
+
 
