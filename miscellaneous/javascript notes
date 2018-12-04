@@ -1,0 +1,65 @@
+* Javascript notes
+
+** Types & Coercion
+
+- There are 7 built in types: null, undefined, boolean, number, string, object, and symbol
+
+- All of these are primitives except object
+
+- Undefined is the absence of a definition whereas Null is the absence of a value
+
+- Undefined is used as a default value for unintialized values, function arguments that were not provided amd missing properties of object
+
+- Null is an assignment value that can be assigned to a variable as a representation of 'no value'
+
+- Empty arrays, objects and functions are boolean coerced to 'true'
+
+- '==' checks for equality with coercion and '===' checks for strict equality. (without coercion)
+
+- Some tricky comparisons 
+
+false == '' //true 
+false == [] //true 
+false == {} //false 
+'' == 0 //true 
+'' == [] //true 
+'' == {} //false 
+0 == [] //true 
+0 == {} //false 
+0 == null //false 
+
+- Scope refers to the execution context It defines the accessibility of variables and functions in the code
+
+- Global scope is the outermost scope. In a browser, the window object is the global scope
+
+- Local scope is the a scope nested inside another function scope. Variables declared in a local scope are accessible within
+  this scope as well as in any inner scopes
+  
+- Hoisting. The behavior of moving var and function declarations to the top of their respective scopes during the compilation phase
+
+- Function declarations are completely hoisted. This means that a declared function can be called before it is defined
+
+- Variables are partially hoisted. Var declarations are hoisted but not its assignments. Let and Const are not hoisted
+
+- Function Expression. Is created when the execution reaches it and is usable from then on--it is not hoisted
+
+- Function Declaration. Can be call both before and after it is defined. It is hoisted. 
+
+- Variables. 'Let', 'Const', 'Var'. 'Let' and 'Const' are not function scoped. They are block scoped. 
+
+- Const can not be reassigned but can be changed/mutated
+
+- A closure is a combination of a function and the lexical environment from which it was declared. Closures allow a function
+to access variables from an enclosing scope, even after it leaves the scope in which it was defined
+
+- One of the main benefits of closures is that is allows data encapsulation. This refers to the idea that some data should not
+be directly exposed. 
+
+- IIFE. Immediately Invoked Function Expression is a function expression that is called immediately after it is defined. 
+It is usually used when you want to create a new variable scope.
+
+- Context. Not to be confused with scope. It is often determined by how a function is invoked. It always refers to the value of 'this'.
+
+- The event loop consists of The call stack, web workers, and message queue. i.e. When a button is clicked the call stack frame is 
+sent to the API web worker loop to be processed and then enters the queue where it waits until the call stack is empty before completing.
+
