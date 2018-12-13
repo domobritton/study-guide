@@ -1,3 +1,21 @@
+// find the needle in haystack and return the index of first occurance
+// haystack = 'needle' needle = 'le'
+var strStr = function(haystack, needle) {
+    if (haystack.length < 1 && needle.length < 1) { return 0}
+    for (let i = 0; i < haystack.length; i++) {
+        let temp = '';
+        let length = needle.length + i;
+        if (haystack[i] === needle[0]) {
+            temp += haystack.slice(i, length);
+        }
+        if (temp.includes(needle)) {
+            return i;
+        }
+    }
+    return -1;
+};
+
+
 function throttle(wait, onLast, onFirst, interval, timestamps) {
   let output = [];
   let cluster = [timestamps[0]];
