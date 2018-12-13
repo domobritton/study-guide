@@ -231,3 +231,47 @@ var mergeTwoLists = function (l1, l2) {
 
     return l3.next;
 };
+
+// compare words in an array like ['flower', 'flow', 'flight']
+// and return the longest common prefix. i.e. 'fl'
+var longestCommonPrefix = function(strs) {
+    if (strs.length < 2) { return strs.join('')}
+    let result = [];
+    
+  for (let i = 0; i < strs.length - 1; i++) {
+      let prev = strs[i];
+      let next = strs[i + 1];
+      
+      let temp = '';
+      for (let j = 0; j < next.length; j++) {
+          let charOne = prev[j]
+          let charTwo = next[j]
+          if (charOne === charTwo) {
+            temp += charOne;
+          } else {
+              break;
+          }
+      }
+      
+          result.push(temp);
+  }
+    return result.sort()[0]
+};
+
+// palindrome of numbers 
+var isPalindrome = function (x) {
+    let numS = x.toString();
+    let mid = Math.floor(numS.length / 2);
+
+    for (let i = 0; i < mid; i++) {
+        let j = numS.length - i - 1;
+        console.log(numS[j])
+        if (numS[i] !== numS[j]) {
+            return false;
+        }
+    }
+    return true;
+};
+
+const a = isPalindrome(1001)
+console.log(a)
