@@ -1,0 +1,51 @@
+# Flexbox
+
+With flexbox, we don't need to set width to anything. 
+We get equal height columns by default.
+When adding width and padding to an element we want to include `box-sizing: border-box` so our math stays as simple as possible.
+By default flexbox allows elements to share horizontal space.
+
+## flex 1
+
+First in parent container add `display: flex`. 
+Then add `flex: 1` to other columns to make equal size. 
+If we want the size of a column to be larger add `flex: 2,` `flex: 3`, etc...
+Children that we don't want to include in flex, don't assign `flex: num` property.
+
+## order 
+
+If we want our `flex: num` items to placed in a certain order, we add `order: num`.
+
+## align-items
+
+Default is `stretch`. Which gives us the default equal columns height.
+`flex-start` aligns columns to top, left with only the heights of its contents.
+`flex-end` aligns columns to bottom with only the heights of its contents.
+`center` center aligns columns.
+
+## justify-content
+
+Default is `flex-start`
+`space-between` on parent adds space between columns. 
+Use with `flex-basis: num%` instead of width to define the width of these children.
+
+## mobile responsiveness
+
+Remove `display: flex` and `justify-content: space-between` from media query for small screen and place in large screen css.
+The columns will stack on mobile and be side-by-side on larger screens.
+
+## flex-wrap
+
+Default is `no-wrap`.
+If we add `flex-wrap: wrap` to parent container, the children will wrap on smaller screens.
+
+## centering content
+
+Parent is 'display: flex` and child is `margin: auto`. This will place the content directly in the center;
+
+## flex-direction
+
+Set parent to `flex-direction: column` on parent to override horizontal behaviour on children.
+
+
+
