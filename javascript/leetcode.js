@@ -426,3 +426,19 @@ function maxSubArray(nums) {
 
 const a = maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]); 
 // 6
+
+var mySqrt = function(x) {
+    if (x < 2) { return x; }
+    
+    let i = 1;
+
+    while (i < x ** 2) {    
+        if (i * i >= x) {
+            return Math.abs(Math.floor(i + (x - i * i)/(2 * i)));             
+        }
+        i++;
+    }
+};
+
+const answer = mySqrt(2);
+console.log(answer);
