@@ -442,3 +442,19 @@ var mySqrt = function(x) {
 
 const answer = mySqrt(2);
 console.log(answer);
+
+var lengthOfLastWord = function(s) {
+    let chars = /[a-z, A-Z]/;
+    if (!s.length || !s.match(chars) ) { return 0; }
+    let words = s.split(' ');
+    console.log(words);
+    for (let i = words.length - 1; i >= 0; i--) {
+        if (words[i] !== '') {
+            return words[i].length;
+        }
+    }
+    return 0;
+};
+
+const answer2 = lengthOfLastWord(" ");
+console.log(answer2);
