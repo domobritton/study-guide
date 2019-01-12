@@ -458,3 +458,18 @@ var lengthOfLastWord = function(s) {
 
 const answer2 = lengthOfLastWord(" ");
 console.log(answer2);
+
+// remove duplicates from a linked list
+function deleteDuplicates(head) {
+  let node = head;
+
+  while (node && node.next) {
+    if (node.val === node.next.val) {
+      node.next = node.next.next;
+    } else {
+      node = node.next;
+    }
+  }
+
+  return head;
+}
