@@ -1,6 +1,6 @@
 * Flash Card Question/Answer 
 
-Q: How do we define a graph mathematically?
+Q: ** How do we define a graph mathematically? **
 A: G = (V, E) where 'V' is a set of vertices or nodes together with a set of 'E' edges, arcs, or lines.
 
 Q: What is the difference between directed, undirected, weighted, and unweighted?
