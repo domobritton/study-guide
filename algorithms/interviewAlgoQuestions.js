@@ -1,4 +1,4 @@
-** Notes on Algorithms and Data Structures
+
 const wishlist = (meDestinations, friends) => {
     let compareBuds = {};
     let counter = 0;
