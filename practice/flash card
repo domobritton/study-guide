@@ -1,5 +1,14 @@
 * Flash Card Question/Answer 
 
+Q: Define box-sizing.
+A: Box sizing is used when you want to include the padding and border into the total height/width.
+
+Q: What is `this` in Javascript?
+A: `this` refers to the object it belongs to. In a method this refers to the owner object. In a function it refers to the global object. In an event this refers to the element that received the event.
+
+Q: What is the difference between POST and GET?
+A: By design, the POST request method requests that a web server accepts the data enclosed in the body of the request message, most likely for storing it. It is often used when uploading a file or when submitting a completed web form. In contrast, the HTTP GET request method retrieves information from the server.
+
 Q: How do we define a graph mathematically?
 A: G = (V, E) where 'V' is a set of vertices or nodes together with a set of 'E' edges, arcs, or lines.
 
