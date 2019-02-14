@@ -1,3 +1,17 @@
+var isPalindrome = function(s) {
+  const letters = s.replace(/[^a-z0-9]/gi,'').toLowerCase();
+  const mid = Math.floor(letters.length / 2);
+  for (let i = 0; i < mid; i++) {
+      let j = letters.length - 1 - i;
+      if (letters[i] !== letters[j]) {
+          return false;
+      }
+  }
+    
+    return true;
+};
+const answer = isPalindrome("Marge, let's \"went.\" I await news telegram.");
+
 // find the needle in haystack and return the index of first occurance
 // haystack = 'needle' needle = 'le'
 var strStr = function(haystack, needle) {
