@@ -1,3 +1,13 @@
+var twoSum = function(nums, target) {
+   let hash = {};
+   for (let i = 0; i < nums.length; i++) {
+       if (hash[nums[i]] !== undefined) {
+           return [hash[nums[i]], i];
+       }
+       hash[target - nums[i]] = i;
+   }
+};
+
 'use strict';
 // helper functions for findMatrixMiddle
 const midIndex = (arr = []) => {
